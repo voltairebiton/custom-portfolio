@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I am currently employed as a DevOps Engineer at Nathan Digital, Dubai UAE.
             <br />
-            I have completed Bachelor of Science in Information Technology and currently preparing for AWS Certified DevOps Engineer
+            I have completed Bachelor of Science in Information Technology and currently preparing for AWS Certified DevOps Engineer Certification
             <br />
             <br />
             Apart from DevOps and Coding, some other activities that I love to do!
