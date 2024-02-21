@@ -18,17 +18,15 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few modules and projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Devops Central"
+              description="A portal to manage devops related services such as provisioning servers, managing resource access such as database, repository etc., server and application monitoring using prometheus, a customized VPN using wireguard as an entrypoint to gain access to private resources and many more. It was a very ambitious project built in microservice architecture and it took nearly 6 months to finish with 3 people working on it. I designed the VPC architecture of the project and was the project lead and did most of the development using node.js, lambda, sqs, kafka, shellscripting with some terraforming and ansible scripts. With this project, we were able to monitor cost incurred by a certain client and track user access of any team member to each project"
             />
           </Col>
 
@@ -36,10 +34,8 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Server Rotational Shutdown"
+              description="A small project with the goal of reducing cost by turning off EC2 instances in Dev, Staging and UAT environment during off peak hours around 9pm to 6am and should allow designated team members to start the server at any moment of time if resource is needed. Tools that were used were lambda, amazon event bridge, Application Load Balancer, a few pipeline changes and some development. The project has saved nearly 4000$ of cost to the company."
             />
           </Col>
 
@@ -47,10 +43,18 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Application Performance Monitoring (APM)"
+              description="Using Prometheus, Grafana and Loki, and a bit of go programming, i created an APM which will monitor servers and applications under the company. The alert system was also configured to be smart as it will not only alert the designated team member of the status of the server or application, but it will also notify the team of some irregular activity happening such as high volume of database or http calls on the system than normal. The project also displays application logs like number of http calls, database calls and total cron jobs executed and its durations"
+              ghLink="https://github.com/voltairebiton/Editor.io"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="CloudFront and Websites"
+              description="With the goal of reducing cost,  I led a project where I assisted the Design Team to convert 11 websites into SPA and thereafter deploy these applications in s3 and fronted them with CloudFront. In this way, the company saved 500$ of monthly cost and improved the speed of the applications"
             />
           </Col>
 
@@ -58,10 +62,19 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="DevOps Ticketing System"
+              description="A portal to manage tickets for the internal Devops Team. It uses microservice architecture separating authentication, notifications, logs on a separate service. The project was built using node.js v20 and docker."
+              ghLink="https://github.com/voltairebiton/Plant_AI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="MongoDB Atlas Scheduled Backup"
+              description="A serverless application that runs and stores a backup of all database in the mongodb atlas every 4 hours for production. Application was built using lambda with node.js, mongodb atlas api, event bridge and S3."
+              ghLink="https://github.com/voltairebiton/Plant_AI"
             />
           </Col>
 
@@ -69,10 +82,8 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Dynamic Freelancer"
+              description="A freelancing platform based in UAE wherein it will assist a freelancer during the onboarding process such as visa processing, and once onboarded will be able to leverage useful features such as client invoicing and many more. It was written in node 16, nuxt 3 and Flutter 3.0 for Mobile Application. The portal currently has 5000 users and logs on average 10 database activity every second making it the most highly utilized project I ever had in my career."
             />
           </Col>
 
@@ -80,11 +91,17 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Jane - Facility Management"
+              description="An application that offers multiple services such as Visitor, Agent, Hospitality, Meeting Room and Inventory Management. Project was single handedly coded by yours truly. The application is written in node.js 12, nuxt 2 and Flutter for mobile application."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Content Management System"
+              description="A project built for websites. The goal is to easily update the content of a certain website without any Developer help. The project will have a separate admin panel and from there, a user can select which website to open and update each and every content such as home page, blogs, services etc. The service has accomodated 6 out of 11 website of the company. Project was built in node 12 and nuxt 2"
             />
           </Col>
         </Row>
