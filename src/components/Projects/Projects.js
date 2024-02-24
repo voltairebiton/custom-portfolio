@@ -113,6 +113,15 @@ function Projects() {
               description="A project built for websites. The goal is to easily update the content of a certain website without any Developer help. The project will have a separate admin panel and from there, a user can select which website to open and update each and every content such as home page, blogs, services etc. The service has accomodated 6 out of 11 website of the company. Project was built in node 12 and nuxt 2"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cms}
+              isBlog={false}
+              title="HR Direct"
+              description="An HRMS application that manages leaves, letters, attendance, claims, and many other hr related processes. I am involve in the mobile and api side using Flutter 2+ and Node v.14"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
